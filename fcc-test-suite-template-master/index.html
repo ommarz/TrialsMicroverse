@@ -8,15 +8,91 @@
   </head>
 
   <body>
+    <header>
       <h1 id="title">Microverse Registration Form</h1>
       <p id="description">Please register your information</p>
-      <form id="suervey-form">
+    </header>
+      <form id="suervey-form">          
+   <div>
+     <div>
         <label for="name-label" id="name-label">Name</label><br>
-        <input id="name" type="text" placeholder="Please type your name">
+        <input id="name" type="text" placeholder="Please type your name" required>
+      </div>
+      <div>
         <label for="email" id="emai-label">Email</label><br>
-        <input id="email" type="email" placeholder="Please type your email">
+        <input id="email" type="email" placeholder="Please type your email" required>
+      </div>
+      <div>
         <label for="age" id="number-label">Age</label><br>
         <input id="number" type="number" min="18" max="120" placeholder="Please type your age">
+      </div>
+  </div>
+  <div class="form-group">
+    <p>Which option best describes your current role?</p>
+    <select name="role" id="dropdown">
+      <option disabled selected value>Select current role</option>
+      <option value="student">Student</option>
+      <option value="job">Full time job</option>
+      <option value="learner">Full time learner</option>
+      <option value="Prefer not to say">Prefer not to say</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+  <div>
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+    <input type="radio" name="radio1" value="Definite" checked>Definite <br>
+    <input type="radio" name="radio1" value="Definite">Maybe <br>
+    <input type="radio" name="radio1" value="Definite">Not sure
+  </div>
+  <div>
+    <p>What is your favorite feature of freeCodeCamp?</p>
+    <div>
+      <select name="" id="dropdown">
+        <option value="" disabled selected value>Select an option</option>
+        <option value="">challenges</option>
+        <option value="">Projectes</option>
+         <option value="">Community</option>
+         <option value="">Open Source</option>
+      </select>
+    </div>
+    <div>
+      <p>What would you like to see improved? (Check all that apply)</p>
+      <div>
+        <input type="checkbox" value="F-Projectes" checked>Front end Projects
+      </div>
+      <div>
+        <input type="checkbox" value="F-Projectes" >Back end Projects
+      </div>
+      <div>
+        <input type="checkbox" value="F-Projectes" >Data Visualization
+      </div>
+      <div>
+        <input type="checkbox" value="F-Projectes" >Challenges
+      </div>
+      <div>
+        <input type="checkbox" value="F-Projectes" >Open source project
+      </div>
+      <div>
+        <input type="checkbox" value="F-Projectes" >Gitter help room
+      </div>
+      <div>
+        <input type="checkbox" value="F-Projectes" >videos
+      </div>
+      <div>
+        <input type="checkbox" value="F-Projectes" >city Meetups
+      </div>
+      <div>
+        <input type="checkbox" value="F-Projectes" >wiki
+      </div>
+      <div>
+        <input type="checkbox" value="F-Projectes" >forum
+      </div>
+      <div>
+        <input type="checkbox" value="F-Projectes" >Additional courses
+      </div>
+    </div>
+    
+  </div>
       </form> 
     
   </body>
